@@ -38,6 +38,7 @@ public class logoScript : MonoBehaviour {
 	void FadeOut(){
 	
 		logo.CrossFadeAlpha(0.0f, 2.5f, false);
+	
 
 	}
 
