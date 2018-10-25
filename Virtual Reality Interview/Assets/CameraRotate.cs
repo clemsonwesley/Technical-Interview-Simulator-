@@ -13,19 +13,19 @@ public class CameraRotate : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown("d"))
         {
-			transform.Rotate(Vector3.up, 20.0f * Time.deltaTime);	
+			transform.Rotate(Vector3.up, 90.0f);	
         }
 		if (Input.GetKeyDown("s"))
         {
-			transform.Rotate(Vector3.right, 20.0f * Time.deltaTime);	
+			transform.Rotate(Vector3.right, 90.0f);	
         }
 		if (Input.GetKeyDown("w"))
         {
-			transform.Rotate(Vector3.left, 20.0f * Time.deltaTime);	
+			transform.Rotate(Vector3.left, 90.0f);	
         }
 		if (Input.GetKeyDown("a"))
         {
-			transform.Rotate(Vector3.down, 20.0f * Time.deltaTime);	
+			transform.Rotate(Vector3.down, 90.0f);	
         }
 		
 	}
