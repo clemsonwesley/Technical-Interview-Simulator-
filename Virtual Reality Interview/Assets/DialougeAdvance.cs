@@ -19,6 +19,7 @@ public class DialougeAdvance : MonoBehaviour
                                    "Tip: They're testing self-awareness and honesty. Say something you honestly struggle with but follow it up by saying how you work around it or are improving.",
                                    "Tip: Dont lowball yourself, but try to be acurate, stay relevant to the job your interviewing for, and try to not be too vauge" };
     public AudioClip logoFX;
+    public Animator anim;
     private AudioSource source;
     
 
@@ -37,6 +38,7 @@ public class DialougeAdvance : MonoBehaviour
         {
             myText.text = "";
             source.PlayOneShot(logoFX, 1);
+            anim.SetTrigger("basic motion");
             StartCoroutine("Dialouge");
         }
         if(Input.GetKeyDown("p"))
