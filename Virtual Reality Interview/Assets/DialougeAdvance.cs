@@ -39,7 +39,7 @@ public class DialougeAdvance : MonoBehaviour
             source.PlayOneShot(logoFX, 1);
             StartCoroutine("Dialouge");
         }
-        if(Input.GetKeyDown("escape"))
+        if(Input.GetKeyDown("p"))
         {
             if (Time.timeScale == 1.0f)
                 Time.timeScale = 0.0f;
