@@ -20,6 +20,7 @@ public class DialougeAdvance : MonoBehaviour
                                    "Tip: Dont lowball yourself, but try to be acurate, stay relevant to the job your interviewing for, and try to not be too vauge" };
     public AudioClip logoFX;
     private AudioSource source;
+    
 
     // Use this for initialization
     void Start()
@@ -32,13 +33,18 @@ public class DialougeAdvance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetKeyDown("space"))
         {
             myText.text = "";
             source.PlayOneShot(logoFX, 1);
             StartCoroutine("Dialouge");
-
+        }
+        if(Input.GetKeyDown("escape"))
+        {
+            if (Time.timeScale == 1.0f)
+                Time.timeScale = 0.0f;
+            else
+                Time.timeScale = 1.0f;
         }
     }
 
