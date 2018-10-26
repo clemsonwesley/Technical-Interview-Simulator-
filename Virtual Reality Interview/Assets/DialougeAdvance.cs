@@ -20,8 +20,12 @@ public class DialougeAdvance : MonoBehaviour
                                    "Tip: Be honest. Try to pull out strengths and traits you haven't discussed in other aspects of the interview",
                                    "Tip: They're testing self-awareness and honesty. Say something you honestly struggle with but follow it up by saying how you work around it or are improving.",
                                    "Tip: Dont lowball yourself, but try to be acurate, stay relevant to the job your interviewing for, and try to not be too vauge" };
-    public AudioClip logoFX;
-    
+    public AudioClip interview1;
+    public AudioClip interview2;
+    public AudioClip interview3;
+    public AudioClip interview4;
+    public AudioClip interview5;
+
     private AudioSource source;
     
 
@@ -30,7 +34,9 @@ public class DialougeAdvance : MonoBehaviour
     {
 		
         source = GetComponent<AudioSource>();
-        myText.text = "";
+
+
+    myText.text = "";
         i = 0;
     }
 
@@ -42,7 +48,7 @@ public class DialougeAdvance : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             myText.text = "";
-            source.PlayOneShot(logoFX, 1);
+ 
 			
            
             StartCoroutine("Dialouge");
@@ -62,9 +68,24 @@ public class DialougeAdvance : MonoBehaviour
     {
  
         myText.text = questions[i];
+        if (i == 0) { source.PlayOneShot(interview1, 1);
+            yield return new WaitForSeconds(interview1.length);
+        }
+        if (i == 1) { source.PlayOneShot(interview2, 1);
+            yield return new WaitForSeconds(interview2.length);
+        }
+        if (i == 2) { source.PlayOneShot(interview3, 1);
+            yield return new WaitForSeconds(interview3.length);
+        }
+        if (i == 3) { source.PlayOneShot(interview4, 1);
+            yield return new WaitForSeconds(interview4.length);
+        }
+        if (i == 4) { source.PlayOneShot(interview5, 1);
+            yield return new WaitForSeconds(interview5.length);
+        }
 
-
-        yield return new WaitForSeconds(5f);
+        
+        //yield return new WaitForSeconds(5f);
 
         myText.text = tips[i];
 		
