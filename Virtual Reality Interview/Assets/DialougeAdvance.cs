@@ -36,9 +36,8 @@ public class DialougeAdvance : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        tipsOn = 0;
         source = GetComponent<AudioSource>();
-
 
         myText.text = "";
         i = 0;
