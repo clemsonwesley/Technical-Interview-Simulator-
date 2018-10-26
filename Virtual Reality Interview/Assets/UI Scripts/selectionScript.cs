@@ -18,5 +18,15 @@ public class selectionScript : MonoBehaviour {
 		}
 
 	}
+
+	public void SelecButton(){
+	
+		if(selectBtn != null){
+			selectBtn.Select();
+			//selectBtn.OnSubmit();
+		
+		}
+		}
+
 		
 }
