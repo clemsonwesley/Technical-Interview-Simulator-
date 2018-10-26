@@ -14,7 +14,7 @@ using UnityEngine.SceneManagement;
 public class logoScript : MonoBehaviour {
 
 	public Image logo;
-	public string loadNext;
+	//public string loadNext;
 
 	IEnumerator Start(){
 	
@@ -24,7 +24,8 @@ public class logoScript : MonoBehaviour {
 		yield return new WaitForSeconds(2.5f);
 		FadeOut();
 		yield return new WaitForSeconds(2.5f);
-		SceneManager.LoadScene(loadNext);
+		//SceneManager.LoadScene(loadNext);
+		 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
 	}
 
