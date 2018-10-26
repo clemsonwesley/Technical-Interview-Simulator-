@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialougeAdvance : MonoBehaviour
 {
@@ -84,11 +85,16 @@ public class DialougeAdvance : MonoBehaviour
             yield return new WaitForSeconds(interview5.length);
         }
 
-        
-        //yield return new WaitForSeconds(5f);
 
-        myText.text = tips[i];
-		
+        //yield return new WaitForSeconds(5f);
+        if (i == 5)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+        if (i < 5)
+        {
+            myText.text = tips[i];
+        }
         i++;
 
     }
