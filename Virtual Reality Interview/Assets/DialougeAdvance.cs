@@ -8,7 +8,7 @@ public class DialougeAdvance : MonoBehaviour
 {
 
     public Text myText;
-	
+    private int tipsOn = 0;
     private int i;
 	
     private string[] questions = { "Interviewer: Thank you for coming to see us for your interview today, why dont you go ahead and tell me a little about yourself?",
@@ -27,17 +27,20 @@ public class DialougeAdvance : MonoBehaviour
     public AudioClip interview4;
     public AudioClip interview5;
 
+    public GameObject intro;
+    public GameObject introSquare;
+
     private AudioSource source;
     
 
     // Use this for initialization
     void Start()
     {
-		
+
         source = GetComponent<AudioSource>();
 
 
-    myText.text = "";
+        myText.text = "";
         i = 0;
     }
 
@@ -46,12 +49,32 @@ public class DialougeAdvance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKeyDown("t") && i == 0)
+        {
+            if (tipsOn == 0)
+            {
+                myText.text = "Tips enabled";
+                tipsOn = 1;
+            }
+            else
+            {
+                myText.text = "Tips disabled";
+                tipsOn = 0;
+            }
+        }
+
         if (Input.GetKeyDown("space"))
         {
+            if (i == 0)
+            {
+                intro.SetActive(false);
+                introSquare.SetActive(false);
+
+            }
+
             myText.text = "";
- 
-			
-           
+
             StartCoroutine("Dialouge");
         }
         if(Input.GetKeyDown("p"))
@@ -67,8 +90,11 @@ public class DialougeAdvance : MonoBehaviour
 
     IEnumerator Dialouge()
     {
- 
-        myText.text = questions[i];
+   
+        if (i < 5)
+        {
+            myText.text = questions[i];
+        }
         if (i == 0) { source.PlayOneShot(interview1, 1);
             yield return new WaitForSeconds(interview1.length);
         }
@@ -91,7 +117,7 @@ public class DialougeAdvance : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
-        if (i < 5)
+        if (i < 5 && tipsOn == 1)
         {
             myText.text = tips[i];
         }
