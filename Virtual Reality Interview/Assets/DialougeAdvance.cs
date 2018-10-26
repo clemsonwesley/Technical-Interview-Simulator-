@@ -7,7 +7,9 @@ public class DialougeAdvance : MonoBehaviour
 {
 
     public Text myText;
+	
     private int i;
+	
     private string[] questions = { "Interviewer: Thank you for coming to see us for your interview today, why dont you go ahead and tell me a little about yourself?",
                                    "Interviewer: Well its good to meet you. This role would require good problem solving skills, can you outline an issue you've had in the past how you tackled it?",
                                    "Interviewer: If i asked your best friend what three words best described you, what do you think they would say?",
@@ -19,17 +21,20 @@ public class DialougeAdvance : MonoBehaviour
                                    "Tip: They're testing self-awareness and honesty. Say something you honestly struggle with but follow it up by saying how you work around it or are improving.",
                                    "Tip: Dont lowball yourself, but try to be acurate, stay relevant to the job your interviewing for, and try to not be too vauge" };
     public AudioClip logoFX;
-    public Animator anim;
+    
     private AudioSource source;
     
 
     // Use this for initialization
     void Start()
     {
+		
         source = GetComponent<AudioSource>();
         myText.text = "";
         i = 0;
     }
+
+	
 
     // Update is called once per frame
     void Update()
@@ -38,7 +43,8 @@ public class DialougeAdvance : MonoBehaviour
         {
             myText.text = "";
             source.PlayOneShot(logoFX, 1);
-            anim.SetTrigger("basic motion");
+			
+           
             StartCoroutine("Dialouge");
         }
         if(Input.GetKeyDown("p"))
@@ -50,6 +56,8 @@ public class DialougeAdvance : MonoBehaviour
         }
     }
 
+	
+
     IEnumerator Dialouge()
     {
  
@@ -59,7 +67,7 @@ public class DialougeAdvance : MonoBehaviour
         yield return new WaitForSeconds(5f);
 
         myText.text = tips[i];
-
+		
         i++;
 
     }

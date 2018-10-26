@@ -532,6 +532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 132760869}
   - component: {fileID: 132760870}
+  - component: {fileID: 132760871}
   m_Layer: 0
   m_Name: m01
   m_TagString: Untagged
@@ -606,6 +607,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.34831846, y: 0.04248164, z: 0.000024966896}
     m_Extent: {x: 0.1495777, y: 0.120660104, z: 0.095003754}
   m_DirtyAABB: 0
+--- !u!95 &132760871
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 132760868}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dda52fcb62d7bb74f9b771e7af8efdb2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &210328913
 GameObject:
   m_ObjectHideFlags: 0
@@ -2784,7 +2803,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh16436
+  m_Name: pb_Mesh34766
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -3030,6 +3049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 515540527}
   - component: {fileID: 515540528}
+  - component: {fileID: 515540529}
   m_Layer: 0
   m_Name: f01
   m_TagString: Untagged
@@ -3117,6 +3137,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.18308884, y: 0.010041766, z: -0.000000059604645}
     m_Extent: {x: 0.8270274, y: 0.20564207, z: 0.68553764}
   m_DirtyAABB: 0
+--- !u!95 &515540529
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 515540526}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d825e4879a9a2f448cbd6a3923b7170, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &515598458
 GameObject:
   m_ObjectHideFlags: 0
@@ -3551,6 +3589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 564684225}
   - component: {fileID: 564684224}
+  - component: {fileID: 564684226}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -3666,6 +3705,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &564684226
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 564684223}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f94ad11826e4bd648a43e6a725fd9d5b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &566658385
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,8 +4421,8 @@ GameObject:
   m_Component:
   - component: {fileID: 751000522}
   - component: {fileID: 751000526}
-  - component: {fileID: 751000525}
   - component: {fileID: 751000524}
+  - component: {fileID: 751000525}
   - component: {fileID: 751000523}
   m_Layer: 0
   m_Name: Text
@@ -4390,7 +4447,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -170}
-  m_SizeDelta: {x: 550, y: 60}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &751000523
 AudioSource:
@@ -4512,7 +4569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4532,7 +4589,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: fake text
 --- !u!222 &751000526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5174,6 +5231,7 @@ GameObject:
   - component: {fileID: 927560554}
   - component: {fileID: 927560553}
   - component: {fileID: 927560552}
+  - component: {fileID: 927560556}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -5257,6 +5315,13 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!222 &927560556
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 927560551}
+  m_CullTransparentMesh: 0
 --- !u!1 &952037766
 GameObject:
   m_ObjectHideFlags: 0
@@ -5576,13 +5641,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 994833853}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 2.5, y: 1.82, z: -2.4}
+  m_LocalRotation: {x: 0, y: 0.2588191, z: 0, w: 0.9659258}
+  m_LocalPosition: {x: 0.2, y: 1.82, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
 --- !u!114 &994833857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7314,14 +7379,13 @@ GameObject:
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 9500000, guid: 4606a7b3c2bc2594c8137c8ce104cb52,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1740364237}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 4606a7b3c2bc2594c8137c8ce104cb52, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 11552d0fdcc776241bc0e154fd3c6534, type: 2}
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
