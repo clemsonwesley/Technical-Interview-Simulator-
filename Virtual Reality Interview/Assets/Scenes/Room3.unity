@@ -567,7 +567,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh8734
+  m_Name: pb_Mesh37778
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -2342,7 +2342,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 9644fd81abda846efb8e4f93e50bc964, type: 2}
+  - {fileID: 2100000, guid: 4b228d081772e4df6a362e527d286176, type: 2}
   - {fileID: 2100000, guid: 15c05b6511486493cb6ed5e36f538af8, type: 2}
   - {fileID: 2100000, guid: e9f1f5559ceff4648bcaaa7233bd0c66, type: 2}
   m_StaticBatchInfo:
@@ -3752,7 +3752,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.1
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
