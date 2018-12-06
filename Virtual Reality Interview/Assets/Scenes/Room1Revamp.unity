@@ -6489,7 +6489,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f5359d1c6b3a8a049a02b5d0041c554a, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8070,7 +8070,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f5359d1c6b3a8a049a02b5d0041c554a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8c4f0450ac18c3544bb34fe16de91d8c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8175,6 +8175,7 @@ MonoBehaviour:
   interview5: {fileID: 8300000, guid: aaa51f03f05463e4eace7420c3c0fec8, type: 3}
   intro: {fileID: 237047153}
   introSquare: {fileID: 1860705930}
+  can: {fileID: 948124439}
 --- !u!114 &751000525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10460,6 +10461,7 @@ MonoBehaviour:
   interview5: {fileID: 8300000, guid: aaa51f03f05463e4eace7420c3c0fec8, type: 3}
   intro: {fileID: 237047153}
   introSquare: {fileID: 1860705930}
+  can: {fileID: 0}
 --- !u!1 &1336765013
 GameObject:
   m_ObjectHideFlags: 0

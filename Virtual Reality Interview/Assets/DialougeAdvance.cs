@@ -10,6 +10,8 @@ public class DialougeAdvance : MonoBehaviour
     public Text myText;
     private int tipsOn = 0;
     private int i;
+	private HashSet<int> numbers = new HashSet<int>();
+	private int counter = 0;
 	
     private string[] questions = { "Interviewer: Thank you for coming to see us for your interview today, why dont you go ahead and tell me a little about yourself?",
                                    "Interviewer: Well its good to meet you. This role would require good problem solving skills, can you outline an issue you've had in the past how you tackled it?",
@@ -97,7 +99,23 @@ public class DialougeAdvance : MonoBehaviour
 
     IEnumerator Dialouge()
     {
-   
+
+		if (counter == 5)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+        if (i < 5 && tipsOn == 1)
+        {
+            myText.text = tips[i];
+        }
+
+		i = Random.Range(0,4);
+		while(numbers.Contains(i)){
+			i = Random.Range(0,4);
+			//Debug.Log(i);
+		}
+		numbers.Add(i);
+
         if (i < 5)
         {
             myText.text = questions[i];
@@ -118,17 +136,10 @@ public class DialougeAdvance : MonoBehaviour
             yield return new WaitForSeconds(interview5.length);
         }
 
-
+		counter++;
         //yield return new WaitForSeconds(5f);
-        if (i == 5)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-        }
-        if (i < 5 && tipsOn == 1)
-        {
-            myText.text = tips[i];
-        }
-        i++;
+        
+        
 
     }
 }
