@@ -6,7 +6,6 @@ using System;
 public class animController : MonoBehaviour {
 
     public Animator anim;
-    System.Random rnd = new System.Random();
     int animRand;
 
 	// Use this for initialization
@@ -19,9 +18,9 @@ public class animController : MonoBehaviour {
 	void Update () {
 
 
-        if (Input.GetKeyDown("space"))
+        if (OVRInput.Get(OVRInput.Button.One) || Input.GetKeyDown("space"))
         {
-            animRand = rnd.Next(1, 3);
+            animRand = new System.Random().Next(1, 3);
             switch (animRand)
             {
                 case 1:
