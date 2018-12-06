@@ -9160,7 +9160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &927560552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9268,7 +9268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &948124440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10335,6 +10335,7 @@ GameObject:
   - component: {fileID: 1224193893}
   - component: {fileID: 1224193892}
   - component: {fileID: 1224193895}
+  - component: {fileID: 1224193896}
   m_Layer: 0
   m_Name: OVRCameraRig
   m_TagString: Untagged
@@ -10440,6 +10441,25 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 32
   sortOrder: 20
+--- !u!114 &1224193896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1224193891}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 465786fc62ee8a24b9bc0a2442476335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myText: {fileID: 751000525}
+  interview1: {fileID: 8300000, guid: 6f91cc7b42797da41b116b46a6914669, type: 3}
+  interview2: {fileID: 8300000, guid: 0ee373d4af4bb694b910344aac9995b4, type: 3}
+  interview3: {fileID: 8300000, guid: 38dd8fbcfcbbbbe4394f6339dc39a62d, type: 3}
+  interview4: {fileID: 8300000, guid: 347cdc81fa1912a408adb45e25571096, type: 3}
+  interview5: {fileID: 8300000, guid: aaa51f03f05463e4eace7420c3c0fec8, type: 3}
+  intro: {fileID: 237047153}
+  introSquare: {fileID: 1860705930}
 --- !u!1 &1336765013
 GameObject:
   m_ObjectHideFlags: 0

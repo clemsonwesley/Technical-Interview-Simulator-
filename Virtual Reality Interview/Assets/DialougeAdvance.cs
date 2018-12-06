@@ -31,6 +31,7 @@ public class DialougeAdvance : MonoBehaviour
     public GameObject introSquare;
 
     private AudioSource source;
+	public GameObject can;
     
 
     // Use this for initialization
@@ -63,7 +64,7 @@ public class DialougeAdvance : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("space"))
+        if (OVRInput.GetDown(OVRInput.Button.One))
         {
             if (i == 0)
             {
@@ -76,12 +77,19 @@ public class DialougeAdvance : MonoBehaviour
 
             StartCoroutine("Dialouge");
         }
-        if(Input.GetKeyDown("p"))
+        if(OVRInput.GetDown(OVRInput.Button.Start))
         {
-            if (Time.timeScale == 1.0f)
+            if (Time.timeScale == 1.0f){
                 Time.timeScale = 0.0f;
-            else
+				can.SetActive(true);
+				source.Pause();
+				}
+
+            else{
                 Time.timeScale = 1.0f;
+				can.SetActive(false);
+				source.Play();
+				}
         }
     }
 
