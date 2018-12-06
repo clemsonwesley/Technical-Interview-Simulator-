@@ -11,23 +11,33 @@ public class DialougeAdvance : MonoBehaviour
     private int tipsOn = 0;
     private int i;
 	private HashSet<int> numbers = new HashSet<int>();
-	private int counter = 0;
+	private int counter = 1;
 	
     private string[] questions = { "Interviewer: Thank you for coming to see us for your interview today, why dont you go ahead and tell me a little about yourself?",
                                    "Interviewer: Well its good to meet you. This role would require good problem solving skills, can you outline an issue you've had in the past how you tackled it?",
-                                   "Interviewer: If i asked your best friend what three words best described you, what do you think they would say?",
+                                   "Interviewer: If I asked your best friend what three words best described you, what do you think they would say?",
                                    "Interviewer: What would you say is your greatest weakness?",
-                                   "Interviewer: And what would you say is your greatest strength?" };
+                                   "Interviewer: And what would you say is your greatest strength?",
+								   "Interviewer: What are your long term career goals?",
+								   "Interviewer: Explain a time when you had a conflict within a group and how you solved it?",
+								   "Talk about a time your worked with a group of culturally different people and what were the challenges you faced?"};
+
     private string[] tips = { "Tip: Try not to tell your whole life story, focus on things like education and career history. If possible focus on things relevant to the position you're applying to",
                                    "Tip: Focus on how you handled the situation professionally and productively, and ideally closing with a happy ending",
                                    "Tip: Be honest. Try to pull out strengths and traits you haven't discussed in other aspects of the interview",
                                    "Tip: They're testing self-awareness and honesty. Say something you honestly struggle with but follow it up by saying how you work around it or are improving.",
-                                   "Tip: Dont lowball yourself, but try to be acurate, stay relevant to the job your interviewing for, and try to not be too vauge" };
+                                   "Tip: Dont lowball yourself, but try to be acurate, stay relevant to the job your interviewing for, and try to not be too vauge",
+								   "Tip: Placeholder",
+								   "Tip: Placeholder",
+								   "Tip: Placeholder"};
     public AudioClip interview1;
     public AudioClip interview2;
     public AudioClip interview3;
     public AudioClip interview4;
     public AudioClip interview5;
+	public AudioClip interview6;
+	public AudioClip interview7;
+	public AudioClip Interview8;
 
     public GameObject intro;
     public GameObject introSquare;
@@ -100,23 +110,25 @@ public class DialougeAdvance : MonoBehaviour
     IEnumerator Dialouge()
     {
 
+		//Interview stopper statement -- end
 		if (counter == 5)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+			yield return new WaitForSeconds(1);
         }
-        if (i < 5 && tipsOn == 1)
+        if (i < 8 && tipsOn == 1)
         {
             myText.text = tips[i];
         }
 
-		i = Random.Range(0,4);
+		i = Random.Range(0,7);
 		while(numbers.Contains(i)){
-			i = Random.Range(0,4);
+			i = Random.Range(0,7);
 			//Debug.Log(i);
 		}
 		numbers.Add(i);
 
-        if (i < 5)
+        if (i < 8)
         {
             myText.text = questions[i];
         }
@@ -135,6 +147,16 @@ public class DialougeAdvance : MonoBehaviour
         if (i == 4) { source.PlayOneShot(interview5, 1);
             yield return new WaitForSeconds(interview5.length);
         }
+		if (i == 5) { source.PlayOneShot(interview6, 1);
+            yield return new WaitForSeconds(interview5.length);
+        }
+		if (i == 6) { source.PlayOneShot(interview7, 1);
+            yield return new WaitForSeconds(interview5.length);
+        }
+		if (i == 7) { source.PlayOneShot(Interview8, 1);
+            yield return new WaitForSeconds(interview5.length);
+        }
+		
 
 		counter++;
         //yield return new WaitForSeconds(5f);

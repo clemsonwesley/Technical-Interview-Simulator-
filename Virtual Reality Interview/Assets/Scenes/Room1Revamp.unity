@@ -8173,6 +8173,9 @@ MonoBehaviour:
   interview3: {fileID: 8300000, guid: 38dd8fbcfcbbbbe4394f6339dc39a62d, type: 3}
   interview4: {fileID: 8300000, guid: 347cdc81fa1912a408adb45e25571096, type: 3}
   interview5: {fileID: 8300000, guid: aaa51f03f05463e4eace7420c3c0fec8, type: 3}
+  interview6: {fileID: 8300000, guid: f5359d1c6b3a8a049a02b5d0041c554a, type: 3}
+  interview7: {fileID: 8300000, guid: f5359d1c6b3a8a049a02b5d0041c554a, type: 3}
+  Interview8: {fileID: 8300000, guid: f5359d1c6b3a8a049a02b5d0041c554a, type: 3}
   intro: {fileID: 237047153}
   introSquare: {fileID: 1860705930}
   can: {fileID: 948124439}
@@ -10459,6 +10462,9 @@ MonoBehaviour:
   interview3: {fileID: 8300000, guid: 38dd8fbcfcbbbbe4394f6339dc39a62d, type: 3}
   interview4: {fileID: 8300000, guid: 347cdc81fa1912a408adb45e25571096, type: 3}
   interview5: {fileID: 8300000, guid: aaa51f03f05463e4eace7420c3c0fec8, type: 3}
+  interview6: {fileID: 0}
+  interview7: {fileID: 0}
+  Interview8: {fileID: 0}
   intro: {fileID: 237047153}
   introSquare: {fileID: 1860705930}
   can: {fileID: 0}
