@@ -11,7 +11,9 @@ public class DialougeAdvance : MonoBehaviour
     public Text myText;
     private int i;
 	private HashSet<int> numbers = new HashSet<int>();
+	private float [] timeSet = new float[5];
 	private int counter = 1;
+	float timerr = 0;
 	
     private string[] questions = { "Interviewer: Tell me about yourself?",
 								   "Interviewer: What would you say is your greatest strength?",
@@ -65,7 +67,7 @@ public class DialougeAdvance : MonoBehaviour
     void Update()
     {
 
-
+		timerr += Time.deltaTime;
         if (OVRInput.GetDown(OVRInput.Button.One))
         {
             /*if (i == 0)
@@ -77,7 +79,15 @@ public class DialougeAdvance : MonoBehaviour
 
             myText.text = "";
 
+			if(counter >= 2){
+			Debug.Log(timerr);
+			timeSet[counter-2] = timerr;
+			timerr = 0;
+
+		}
+
 			if(counter < 6){
+			
             StartCoroutine("Dialouge");
 			}
 
@@ -104,6 +114,8 @@ public class DialougeAdvance : MonoBehaviour
 				source.Play();
 				}
         }
+
+		
     }
 
 	
@@ -111,8 +123,11 @@ public class DialougeAdvance : MonoBehaviour
     IEnumerator Dialouge()
     {
 
-		Debug.Log(TipsToggle.tipsOn);
+		//Debug.Log(TipsToggle.tipsOn);
 		//Interview stopper statement -- end
+
+		
+			
 		if (counter == 6)
         {
             
