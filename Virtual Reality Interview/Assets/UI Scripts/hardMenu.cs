@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class hardMenu : MonoBehaviour {
 
 	public void PlayGame(){
-		SceneManager.LoadScene(6);
+		SceneManager.LoadScene(4);
 	}
 }
