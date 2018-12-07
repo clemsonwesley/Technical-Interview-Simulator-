@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Threading;
 
 public class DialougeAdvance : MonoBehaviour
 {
@@ -37,9 +38,11 @@ public class DialougeAdvance : MonoBehaviour
 	public AudioClip interview6;
 	public AudioClip interview7;
 	public AudioClip Interview8;
+	//public AudioClip intro;
+	public AudioClip outro;
 
-    public GameObject intro;
-    public GameObject introSquare;
+    //public GameObject intro;
+    //public GameObject introSquare;
 
     private AudioSource source;
 	public GameObject can;
@@ -65,12 +68,12 @@ public class DialougeAdvance : MonoBehaviour
 
         if (OVRInput.GetDown(OVRInput.Button.One))
         {
-            if (i == 0)
+            /*if (i == 0)
             {
                 intro.SetActive(false);
                 introSquare.SetActive(false);
 
-            }
+            }*/
 
             myText.text = "";
 
@@ -79,6 +82,11 @@ public class DialougeAdvance : MonoBehaviour
 			}
 
 			if(counter == 6){
+
+				myText.text = "";
+			//Debug.Log("Made it");
+			source.PlayOneShot(outro, 1);
+			Thread.Sleep(6);
 				can2.SetActive(true);
 			}
         }
@@ -107,8 +115,7 @@ public class DialougeAdvance : MonoBehaviour
 		//Interview stopper statement -- end
 		if (counter == 6)
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-
+            
 			yield return new WaitForSeconds(1);
         }
         
@@ -124,7 +131,12 @@ public class DialougeAdvance : MonoBehaviour
         {
             myText.text = questions[i];
         }
-        if (i == 0) { source.PlayOneShot(interview1, 1);
+        if (i == 0) { 
+			//myText.text = "";
+			//source.PlayOneShot(intro, 1);
+			//Thread.Sleep(5);
+			//myText.text = questions[i];
+			source.PlayOneShot(interview1, 1);
             yield return new WaitForSeconds(interview1.length);
         }
         if (i == 1) { source.PlayOneShot(interview2, 1);
