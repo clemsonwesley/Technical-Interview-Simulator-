@@ -531,7 +531,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 97357289}
-        m_MethodName: QuitGame
+        m_MethodName: toggleTextOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 97357282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2568aa18850fb49448268fc100776345, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca5787b5a5066644861295b192cb106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &97357290
@@ -3957,8 +3957,8 @@ GameObject:
   m_Component:
   - component: {fileID: 687481359}
   - component: {fileID: 687481367}
-  - component: {fileID: 687481366}
   - component: {fileID: 687481365}
+  - component: {fileID: 687481366}
   - component: {fileID: 687481364}
   - component: {fileID: 687481363}
   - component: {fileID: 687481362}
@@ -4149,7 +4149,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 687481365}
-        m_MethodName: QuitGame
+        m_MethodName: toggleVOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4169,7 +4169,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 687481358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2568aa18850fb49448268fc100776345, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca5787b5a5066644861295b192cb106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &687481366
@@ -6846,7 +6846,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 930547651}
-        m_MethodName: QuitGame
+        m_MethodName: toggleTextOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6866,7 +6866,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 930547644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2568aa18850fb49448268fc100776345, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca5787b5a5066644861295b192cb106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &930547652
@@ -13660,7 +13660,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1870708065}
-        m_MethodName: QuitGame
+        m_MethodName: toggleVOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13680,7 +13680,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1870708058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2568aa18850fb49448268fc100776345, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca5787b5a5066644861295b192cb106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1870708066
@@ -14506,7 +14506,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1935541208}
-        m_MethodName: QuitGame
+        m_MethodName: toggleTextOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14526,7 +14526,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1935541201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2568aa18850fb49448268fc100776345, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca5787b5a5066644861295b192cb106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1935541209

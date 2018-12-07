@@ -1723,7 +1723,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 234494528}
-        m_MethodName: QuitGame
+        m_MethodName: toggleVOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1743,7 +1743,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 234494521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2568aa18850fb49448268fc100776345, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca5787b5a5066644861295b192cb106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &234494529
@@ -10025,7 +10025,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 803647539}
-        m_MethodName: QuitGame
+        m_MethodName: toggleTextOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10045,7 +10045,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 803647532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2568aa18850fb49448268fc100776345, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca5787b5a5066644861295b192cb106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &803647540
@@ -14713,7 +14713,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1485787297}
-        m_MethodName: QuitGame
+        m_MethodName: toggleTextOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14733,7 +14733,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1485787290}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2568aa18850fb49448268fc100776345, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca5787b5a5066644861295b192cb106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1485787298
@@ -17645,7 +17645,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2051090372}
-        m_MethodName: QuitGame
+        m_MethodName: toggleVOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17665,7 +17665,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2051090365}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2568aa18850fb49448268fc100776345, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca5787b5a5066644861295b192cb106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2051090373
