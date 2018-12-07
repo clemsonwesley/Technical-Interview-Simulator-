@@ -1,17 +1,31 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Threading;
+using TMPro;
+
 
 public class DialougeAdvance : MonoBehaviour
 {
 
     public Text myText;
+	public TextMeshProUGUI time1;
+	public TextMeshProUGUI time2;
+	public TextMeshProUGUI time3;
+	public TextMeshProUGUI time4;
+	public TextMeshProUGUI time5;
+	public TextMeshProUGUI time6;
+	public TextMeshProUGUI time7;
+	public TextMeshProUGUI time8;
+	public TextMeshProUGUI time9;
+	public TextMeshProUGUI time10;
+
     private int i;
 	private HashSet<int> numbers = new HashSet<int>();
-	private float [] timeSet = new float[5];
+	private int [] timeSet = new int[5];
 	private int counter = 1;
 	float timerr = 0;
 	
@@ -32,6 +46,9 @@ public class DialougeAdvance : MonoBehaviour
 								   "Tip: Focus only on the problems that arose because if the cultural differences, don’t bad mouth the other group members. Be sure to be able to talk about how you solved any problems.",
 								   "Tip: Be honest, but don’t make it seem as if everything must be exactly how you want it. People will be less likely to offer you a job if they think you’ll fit in the environment.",
 								   "Tip: The answer to this question depends greatly on the exact career field you’re entering. Be honest and talk about why you enjoy it, and the future of the field."};
+
+	
+
     public AudioClip interview1;
     public AudioClip interview2;
     public AudioClip interview3;
@@ -40,6 +57,8 @@ public class DialougeAdvance : MonoBehaviour
 	public AudioClip interview6;
 	public AudioClip interview7;
 	public AudioClip Interview8;
+
+	private float clipTimeAvg = 2.875f;
 	//public AudioClip intro;
 	public AudioClip outro;
 
@@ -68,7 +87,7 @@ public class DialougeAdvance : MonoBehaviour
     {
 
 		timerr += Time.deltaTime;
-        if (OVRInput.GetDown(OVRInput.Button.One))
+        if (OVRInput.GetDown(OVRInput.Button.One) && Time.timeScale != 0.0f)
         {
             /*if (i == 0)
             {
@@ -85,8 +104,35 @@ public class DialougeAdvance : MonoBehaviour
             myText.text = "";
 
 			if(counter >= 2){
-			Debug.Log(timerr);
-			timeSet[counter-2] = timerr;
+			timerr -= clipTimeAvg;
+			TimeSpan timespan = TimeSpan.FromSeconds((int)timerr);
+			int min = timespan.Minutes;
+			int sec = timespan.Seconds;
+			
+			if(counter == 2){
+				time1.text = min.ToString();
+				time6.text = sec.ToString();
+			}
+			if(counter == 3){
+				time2.text = min.ToString();
+				time7.text = sec.ToString();
+			}
+			if(counter == 4){
+				time3.text = min.ToString();
+				time8.text = sec.ToString();
+			}
+			if(counter == 5){
+				time4.text = min.ToString();
+				time9.text = sec.ToString();
+			}
+			if(counter == 6){
+				time5.text = min.ToString();
+				time10.text = sec.ToString();
+			}
+
+			//Debug.Log(min);
+			//Debug.Log(sec);
+			//timeSet[counter-2] = sec;
 			timerr = 0;
 
 		}
@@ -140,9 +186,9 @@ public class DialougeAdvance : MonoBehaviour
         }
         
 
-		i = Random.Range(0,7);
+		i = UnityEngine.Random.Range(0,7);
 		while(numbers.Contains(i)){
-			i = Random.Range(0,7);
+			i = UnityEngine.Random.Range(0,7);
 			//Debug.Log(i);
 		}
 		numbers.Add(i);

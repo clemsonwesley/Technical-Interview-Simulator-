@@ -23,6 +23,15 @@ public class animController2 : MonoBehaviour {
                 case 1:
                     anima.Play("man02_Talk01");
                     break;
+                case 2:
+                    anima.Play("man02_Talk02");
+                    break;
+                case 3:
+                    anima.Play("man02_Talk03");
+                    break;
+                case 4:
+                    anima.Play("man02_Talk04");
+                    break;
             }
         }
     }

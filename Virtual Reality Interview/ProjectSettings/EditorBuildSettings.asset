@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Room2.unity
     guid: df269440d137b4b37ac50f8b66f1a93a
+  - enabled: 1
+    path: Assets/Scenes/RoomTutorial.unity
+    guid: b5512b91c427c3544ace672b32496cea
   m_configObjects: {}
