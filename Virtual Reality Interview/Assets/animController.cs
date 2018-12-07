@@ -37,6 +37,9 @@ public class animController : MonoBehaviour {
                 case 4:
                     anima.Play("man01_Talk04");
                     break;
+                case 5:
+                    anima.Play("man01_Talk05");
+                    break;
             }
             
             
