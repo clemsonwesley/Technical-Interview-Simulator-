@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8172,14 +8172,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText: {fileID: 751000525}
-  interview1: {fileID: 8300000, guid: 25114b9e71530b441bc6c2937276ff6a, type: 3}
-  interview2: {fileID: 8300000, guid: f844b5b4dbd355d43ae3ebc639d1d621, type: 3}
-  interview3: {fileID: 8300000, guid: cebe258641691db42a543eb5c1a8830d, type: 3}
-  interview4: {fileID: 8300000, guid: 96872a51c9f2e0449b6f29aacae7f22f, type: 3}
-  interview5: {fileID: 8300000, guid: 56d229d1492cd4845b06f32857d30ea2, type: 3}
-  interview6: {fileID: 8300000, guid: 392704a1d0293c04386d6624d523d527, type: 3}
-  interview7: {fileID: 8300000, guid: 16db0bf0a1478164da3404fc0dfae36b, type: 3}
-  Interview8: {fileID: 8300000, guid: c4195a6184bd8334c97c2e2197a2d82a, type: 3}
+  interview1: {fileID: 8300000, guid: 2750b542d715d9f49827c4cfcf970002, type: 3}
+  interview2: {fileID: 8300000, guid: 4ee20a07fe3f028428ec14268d71ae60, type: 3}
+  interview3: {fileID: 8300000, guid: eb9d3c9b68b1a0c4aaacda756a6f109f, type: 3}
+  interview4: {fileID: 8300000, guid: f0c38d6fc0825844d918c961190e8e17, type: 3}
+  interview5: {fileID: 8300000, guid: d03ee7ca6200c89499617023bf6f201e, type: 3}
+  interview6: {fileID: 8300000, guid: ced55096782540e49bd09cc71c1189e6, type: 3}
+  interview7: {fileID: 8300000, guid: 2bc339178e7ac2447893cdf68bbb05df, type: 3}
+  Interview8: {fileID: 8300000, guid: fdbcad1c15d7bc8439b79a1c86b7ce9d, type: 3}
   intro: {fileID: 237047153}
   introSquare: {fileID: 1860705930}
   can: {fileID: 948124439}
