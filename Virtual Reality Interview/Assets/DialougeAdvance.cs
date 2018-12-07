@@ -44,6 +44,7 @@ public class DialougeAdvance : MonoBehaviour
 
     private AudioSource source;
 	public GameObject can;
+	public GameObject can2;
     
 
     // Use this for initialization
@@ -87,7 +88,13 @@ public class DialougeAdvance : MonoBehaviour
 
             myText.text = "";
 
+			if(counter < 6){
             StartCoroutine("Dialouge");
+			}
+
+			if(counter == 6){
+				can2.SetActive(true);
+			}
         }
         if(OVRInput.GetDown(OVRInput.Button.Start))
         {
@@ -111,9 +118,10 @@ public class DialougeAdvance : MonoBehaviour
     {
 
 		//Interview stopper statement -- end
-		if (counter == 5)
+		if (counter == 6)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+
 			yield return new WaitForSeconds(1);
         }
         if (i < 8 && tipsOn == 1)
