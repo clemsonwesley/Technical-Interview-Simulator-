@@ -8,7 +8,6 @@ public class DialougeAdvance : MonoBehaviour
 {
 
     public Text myText;
-    private int tipsOn = 0;
     private int i;
 	private HashSet<int> numbers = new HashSet<int>();
 	private int counter = 1;
@@ -50,7 +49,7 @@ public class DialougeAdvance : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        tipsOn = 0;
+        //TipsToggle.tipsOn = 0;
         source = GetComponent<AudioSource>();
 
         myText.text = "";
@@ -63,19 +62,6 @@ public class DialougeAdvance : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown("t") && i == 0)
-        {
-            if (tipsOn == 0)
-            {
-                myText.text = "Tips enabled";
-                tipsOn = 1;
-            }
-            else
-            {
-                myText.text = "Tips disabled";
-                tipsOn = 0;
-            }
-        }
 
         if (OVRInput.GetDown(OVRInput.Button.One))
         {
@@ -117,6 +103,7 @@ public class DialougeAdvance : MonoBehaviour
     IEnumerator Dialouge()
     {
 
+		Debug.Log(TipsToggle.tipsOn);
 		//Interview stopper statement -- end
 		if (counter == 6)
         {
@@ -124,10 +111,7 @@ public class DialougeAdvance : MonoBehaviour
 
 			yield return new WaitForSeconds(1);
         }
-        if (i < 8 && tipsOn == 1)
-        {
-            myText.text = tips[i];
-        }
+        
 
 		i = Random.Range(0,7);
 		while(numbers.Contains(i)){
@@ -165,6 +149,10 @@ public class DialougeAdvance : MonoBehaviour
             yield return new WaitForSeconds(interview5.length);
         }
 		
+		if (i < 8 && TipsToggle.tipsOn == 1)
+        {
+            myText.text = tips[i];
+        }
 
 		counter++;
         //yield return new WaitForSeconds(5f);
