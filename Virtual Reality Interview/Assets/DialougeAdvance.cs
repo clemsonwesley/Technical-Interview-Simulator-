@@ -116,25 +116,31 @@ public class DialougeAdvance : MonoBehaviour
 			
 			if(counter == 2){
 
-				if(sec > 60){
-				
-				}
+				text1.text = "Too Short";
 				time1.text = min.ToString();
 				time6.text = sec.ToString();
 			}
 			if(counter == 3){
+
+				text2.text = "Too Short";
 				time2.text = min.ToString();
 				time7.text = sec.ToString();
 			}
 			if(counter == 4){
+
+				text3.text = "Too Short";
 				time3.text = min.ToString();
 				time8.text = sec.ToString();
 			}
 			if(counter == 5){
+
+				text4.text = "Too Short";
 				time4.text = min.ToString();
 				time9.text = sec.ToString();
 			}
 			if(counter == 6){
+
+				text5.text = "Too Short";
 				time5.text = min.ToString();
 				time10.text = sec.ToString();
 			}
