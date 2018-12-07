@@ -21,14 +21,14 @@ public class DialougeAdvance : MonoBehaviour
 								   "Interviewer: What type of group dynamic do you prefer in a professional setting?",
 								   "Interviewer: Why do you want to be in this career field?"};
 
-    private string[] tips = { "Tip: Try not to tell your whole life story, focus on things like education and career history. If possible focus on things relevant to the position you're applying to",
-                                   "Tip: Focus on how you handled the situation professionally and productively, and ideally closing with a happy ending",
-                                   "Tip: Be honest. Try to pull out strengths and traits you haven't discussed in other aspects of the interview",
-                                   "Tip: They're testing self-awareness and honesty. Say something you honestly struggle with but follow it up by saying how you work around it or are improving.",
-                                   "Tip: Dont lowball yourself, but try to be acurate, stay relevant to the job your interviewing for, and try to not be too vauge",
-								   "Tip: Placeholder",
-								   "Tip: Placeholder",
-								   "Tip: Placeholder"};
+    private string[] tips = { "Tip: Try not to tell your whole life story, focus on things like education and career history. If possible, focus on things relevant to the position you’re applying to. ",
+                                   "Tip: Be honest but try not to come across as arrogant. Try to pull out strengths and traits that you haven’t discussed in other aspects of the interview",
+                                   "Tip: They’re testing self-awareness and honesty. Say something you honestly struggle with but follow it up by saying how you work around it or are improving.",
+                                   "Tip: There’s no real right answer to this, try to give a realistic career path for you. Make sure that you don’t imply you’ll be leaving the company any time soon.",
+                                   "Tip: Focus on what the problem was and how you resolved it peacefully. Don’t talk bad about the individuals within the group.",
+								   "Tip: Focus only on the problems that arose because if the cultural differences, don’t bad mouth the other group members. Be sure to be able to talk about how you solved any problems.",
+								   "Tip: Be honest, but don’t make it seem as if everything must be exactly how you want it. People will be less likely to offer you a job if they think you’ll fit in the environment.",
+								   "Tip: The answer to this question depends greatly on the exact career field you’re entering. Be honest and talk about why you enjoy it, and the future of the field."};
     public AudioClip interview1;
     public AudioClip interview2;
     public AudioClip interview3;
