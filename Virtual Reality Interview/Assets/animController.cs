@@ -16,13 +16,13 @@ public class animController : MonoBehaviour {
 
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+        // Update is called once per frame
+        void Update () {
 
         if (OVRInput.Get(OVRInput.Button.One) || Input.GetKeyDown("space"))
         {
-            animRand = new System.Random().Next(1, 5);
+            animRand = new System.Random().Next(1, 9);
             switch (animRand)
             {
                 case 1:
@@ -50,8 +50,6 @@ public class animController : MonoBehaviour {
                     anima.Play("man01_Talk08");
                     break;
             }
-            
-            
         }
     }
 }
