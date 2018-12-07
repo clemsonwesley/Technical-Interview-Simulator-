@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7808,8 +7808,8 @@ GameObject:
   m_Component:
   - component: {fileID: 849395050}
   - component: {fileID: 849395058}
-  - component: {fileID: 849395057}
   - component: {fileID: 849395056}
+  - component: {fileID: 849395057}
   - component: {fileID: 849395055}
   - component: {fileID: 849395054}
   - component: {fileID: 849395053}
@@ -8000,7 +8000,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 849395056}
-        m_MethodName: QuitGame
+        m_MethodName: toggleVOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8020,7 +8020,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 849395049}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2568aa18850fb49448268fc100776345, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca5787b5a5066644861295b192cb106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &849395057
@@ -9850,8 +9850,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1152345533}
   - component: {fileID: 1152345541}
-  - component: {fileID: 1152345540}
   - component: {fileID: 1152345539}
+  - component: {fileID: 1152345540}
   - component: {fileID: 1152345538}
   - component: {fileID: 1152345537}
   - component: {fileID: 1152345536}
@@ -10042,7 +10042,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1152345539}
-        m_MethodName: QuitGame
+        m_MethodName: toggleTextOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10062,7 +10062,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1152345532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2568aa18850fb49448268fc100776345, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca5787b5a5066644861295b192cb106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1152345540
@@ -10402,8 +10402,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1206721178}
   - component: {fileID: 1206721186}
-  - component: {fileID: 1206721185}
   - component: {fileID: 1206721184}
+  - component: {fileID: 1206721185}
   - component: {fileID: 1206721183}
   - component: {fileID: 1206721182}
   - component: {fileID: 1206721181}
@@ -10594,7 +10594,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1206721184}
-        m_MethodName: QuitGame
+        m_MethodName: toggleVOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10614,7 +10614,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1206721177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2568aa18850fb49448268fc100776345, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca5787b5a5066644861295b192cb106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1206721185
@@ -11580,6 +11580,31 @@ MonoBehaviour:
   maxRenderScale: 1
   _headPoseRelativeOffsetRotation: {x: 0, y: 0, z: 0}
   _headPoseRelativeOffsetTranslation: {x: 0, y: 0, z: 0}
+  expandMixedRealityCapturePropertySheet: 0
+  enableMixedReality: 0
+  compositionMethod: 0
+  extraHiddenLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  capturingCameraDevice: 0
+  flipCameraFrameHorizontally: 0
+  flipCameraFrameVertically: 0
+  handPoseStateLatency: 0
+  sandwichCompositionRenderLatency: 0
+  sandwichCompositionBufferedFrames: 8
+  chromaKeyColor: {r: 0, g: 1, b: 0, a: 1}
+  chromaKeySimilarity: 0.6
+  chromaKeySmoothRange: 0.03
+  chromaKeySpillRange: 0.06
+  useDynamicLighting: 0
+  depthQuality: 1
+  dynamicLightingSmoothFactor: 8
+  dynamicLightingDepthVariationClampingValue: 0.001
+  virtualGreenScreenType: 0
+  virtualGreenScreenTopY: 10
+  virtualGreenScreenBottomY: -10
+  virtualGreenScreenApplyDepthCulling: 0
+  virtualGreenScreenDepthTolerance: 0.2
   _trackingOriginType: 0
   usePositionTracking: 1
   useRotationTracking: 1
@@ -15191,7 +15216,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2053544431}
-        m_MethodName: QuitGame
+        m_MethodName: toggleTextOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15211,7 +15236,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2053544424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2568aa18850fb49448268fc100776345, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca5787b5a5066644861295b192cb106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2053544432
