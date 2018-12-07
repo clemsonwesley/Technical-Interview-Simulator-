@@ -945,6 +945,7 @@ GameObject:
   - component: {fileID: 171719865}
   - component: {fileID: 171719864}
   - component: {fileID: 171719863}
+  - component: {fileID: 171719867}
   - component: {fileID: 171719862}
   - component: {fileID: 171719861}
   - component: {fileID: 171719860}
@@ -1133,8 +1134,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 171719864}
-        m_MethodName: QuitGame
+      - m_Target: {fileID: 171719867}
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1191,6 +1192,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 171719857}
   m_CullTransparentMesh: 0
+--- !u!114 &171719867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 171719857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74444dd950eb96e48975f8d9147763fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &191052475
 Transform:
   m_ObjectHideFlags: 0
@@ -8058,6 +8070,7 @@ GameObject:
   - component: {fileID: 703358949}
   - component: {fileID: 703358948}
   - component: {fileID: 703358947}
+  - component: {fileID: 703358951}
   - component: {fileID: 703358946}
   - component: {fileID: 703358945}
   - component: {fileID: 703358944}
@@ -8246,8 +8259,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 703358948}
-        m_MethodName: QuitGame
+      - m_Target: {fileID: 703358951}
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8304,6 +8317,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 703358941}
   m_CullTransparentMesh: 0
+--- !u!114 &703358951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 703358941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74444dd950eb96e48975f8d9147763fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &749059188
 Prefab:
   m_ObjectHideFlags: 0
