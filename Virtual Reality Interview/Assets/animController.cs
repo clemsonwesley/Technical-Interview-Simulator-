@@ -22,7 +22,7 @@ public class animController : MonoBehaviour {
 
         if (OVRInput.Get(OVRInput.Button.One) || Input.GetKeyDown("space"))
         {
-            animRand = new System.Random().Next(1, 3);
+            animRand = new System.Random().Next(1, 5);
             switch (animRand)
             {
                 case 1:
@@ -33,6 +33,9 @@ public class animController : MonoBehaviour {
                     break;
                 case 3:
                     anima.Play("man01_Talk03");
+                    break;
+                case 4:
+                    anima.Play("man01_Talk04");
                     break;
             }
             
