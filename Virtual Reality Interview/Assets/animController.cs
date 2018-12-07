@@ -26,12 +26,13 @@ public class animController : MonoBehaviour {
             switch (animRand)
             {
                 case 1:
-                    anima.Play("man01_Idle01");
                     anima.Play("man01_Talk01");
-                    
                     break;
                 case 2:
                     anima.Play("man01_Talk02");
+                    break;
+                case 3:
+                    anima.Play("man01_Talk03");
                     break;
             }
             
