@@ -87,7 +87,7 @@ public class DialougeAdvance2 : MonoBehaviour
     {
 
 		timerr += Time.deltaTime;
-        if (OVRInput.GetDown(OVRInput.Button.One))
+        if (OVRInput.GetDown(OVRInput.Button.One) && Time.timeScale != 0.0f)
         {
             /*if (i == 0)
             {
