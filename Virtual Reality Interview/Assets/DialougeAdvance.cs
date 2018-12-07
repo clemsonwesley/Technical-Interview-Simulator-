@@ -77,6 +77,11 @@ public class DialougeAdvance : MonoBehaviour
 
             }*/
 
+			//Reset timer for first question
+			if(counter == 1){
+				timerr = 0;
+			}
+
             myText.text = "";
 
 			if(counter >= 2){
