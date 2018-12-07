@@ -20,6 +20,18 @@ public class InterviewQuestions : MonoBehaviour {
 	public string q13 = "Did you ever not meet your goals?";
 	public string q14 = "What do you do if you and your co-worker disagree on a pivotal task?";
 	public string q15 = "What is your best strategy to motivate your teammates?";
+    public string q16 = "How would you describe your work style?";
+    public string q17 = "What techniques and tools do you use to keep yourself organized?";
+    public string q18 = "What three words would your friends use to describe you?";
+    public string q19 = "Tell me what you think are the qualities of a good leader.";
+    public string q20 = "Who has impacted you the most in your life?";
+    public string q21 = "Can you describe a time when your work was criticized?";
+    public string q22 = "Give me an example of a time that you felt you went above and beyond the call of duty at work or in a class.";
+    public string q23 = "If your supervisor asked you to do something that you disagreed with, what would you do?";
+    public string q24 = "What can you do for us that other candidates can't?";
+    public string q25 = "What would you do if you were given multiple tasks and had no way of finishing them all on time?";
+    public string q26 = "Whats a time that you exercised leadership?";
+
 
     public string t1 = "Tip: Try not to tell your whole life story, focus on things like education and career history. If possible, focus on things relevant to the position you’re applying to. ";
     public string t2 = "Tip: Be honest but try not to come across as arrogant. Try to pull out strengths and traits that you haven’t discussed in other aspects of the interview";
@@ -36,6 +48,18 @@ public class InterviewQuestions : MonoBehaviour {
     public string t13 = "Tip: Use a real example, but make sure to not sound like it was directly your fault. Talk about how you moved forward or changed your goal.";
     public string t14 = "Tip: Make sure that you would listen to the other persons side and see if you can reach a compromise. Unless the disagreement is severe its more important that everyone is happy.";
     public string t15 = "Tip: There’s no real right answer here, maybe mention keeping everyone happy, setting clear goals, not micro managing, or come up with your own.";
+    public string t16 = "Tip: Try to talk about how you like to communicate, work with your boss, if you prefer to work collaboratively or by yourself, etc.";
+    public string t17 = "Tip: You should be able to give an honest response to this, some organizational tools include an effective calendar system, filing and labeling, etc.";
+    public string t18 = "Tip: Be honest. Try to pull out strengths and traits you haven't discussed in other aspects of the interview";
+    public string t19 = "Tip: Be honest. Try to focus on qualities that you would want your boss to have, or that you think you would have if you were the boss. ";
+    public string t20 = "Tip: Try to talk about someone who is relevant to the role, like a previous employer or teacher. Make sure to focus on how they helped you in ways that are relevant to the job";
+    public string t21 = "Tip: Try to give a real example. Talk about why they criticized the work, but don’t bad mouth them personally and try not to come off as indignant. Focus on how you moved forward past it.";
+    public string t22 = "Tip: Be honest. Don’t lowball yourself but also don’t be too prideful. Focus on the project and why you going above and beyond led to the project being more successful.";
+    public string t23 = "Tip: There’s no real right answer to this, make sure you don’t completely fold on your stance, but also make sure you don’t ignore what your supervisor wants.";
+    public string t24 = "Tip: This is another time to push your strengths. Focus on strengths that you think other people might not have or use it as an opportunity to push strengths you haven’t got a chance to mention yet.";
+    public string t25 = "Tip: There’s no real right answer to this, you probably want to say you would finish the biggest tasks first, and you should probably talk to your supervisor about it.";
+    public string t26 = "Tip: Try and give a real example. Focus on how you led your group to a successful conclusion, and how you made sure everyone was happy and productive.";
+
 
     public string [] ezTips = new string[8];
     public string [] medTips = new string[8];
