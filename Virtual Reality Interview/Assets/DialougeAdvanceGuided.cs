@@ -22,6 +22,11 @@ public class DialougeAdvanceGuided : MonoBehaviour
 	public TextMeshProUGUI time8;
 	public TextMeshProUGUI time9;
 	public TextMeshProUGUI time10;
+	public TextMeshProUGUI text1;
+	public TextMeshProUGUI text2;
+	public TextMeshProUGUI text3;
+	public TextMeshProUGUI text4;
+	public TextMeshProUGUI text5;
 
     private int i;
 	private HashSet<int> numbers = new HashSet<int>();
@@ -57,6 +62,13 @@ public class DialougeAdvanceGuided : MonoBehaviour
 	public AudioClip interview6;
 	public AudioClip interview7;
 	public AudioClip Interview8;
+
+	public AudioClip Guide1;
+    public AudioClip Guide2;
+    public AudioClip  Guide3;
+    public AudioClip  Guide4;
+    public AudioClip  Guide5;
+	public AudioClip  Guide6;
 
 	private float clipTimeAvg = 2.875f;
 	//public AudioClip intro;
@@ -110,22 +122,32 @@ public class DialougeAdvanceGuided : MonoBehaviour
 			int sec = timespan.Seconds;
 			
 			if(counter == 2){
+
+				text1.text = "Too Short";
 				time1.text = min.ToString();
 				time6.text = sec.ToString();
 			}
 			if(counter == 3){
+
+				text2.text = "Too Short";
 				time2.text = min.ToString();
 				time7.text = sec.ToString();
 			}
 			if(counter == 4){
+
+				text3.text = "Too Short";
 				time3.text = min.ToString();
 				time8.text = sec.ToString();
 			}
 			if(counter == 5){
+
+				text4.text = "Too Short";
 				time4.text = min.ToString();
 				time9.text = sec.ToString();
 			}
 			if(counter == 6){
+
+				text5.text = "Too Short";
 				time5.text = min.ToString();
 				time10.text = sec.ToString();
 			}
@@ -186,17 +208,28 @@ public class DialougeAdvanceGuided : MonoBehaviour
         }
         
 
-		i = UnityEngine.Random.Range(0,7);
-		while(numbers.Contains(i)){
-			i = UnityEngine.Random.Range(0,7);
-			//Debug.Log(i);
-		}
-		numbers.Add(i);
+		//i = UnityEngine.Random.Range(0,7);
+		//while(numbers.Contains(i)){
+		//	i = UnityEngine.Random.Range(0,7);
+		//	//Debug.Log(i);
+		//}
+		//numbers.Add(i);
+		
+		if(interviewerMute.textOn == 1){
+		
+			myText.text = "";
 
+		}
+		else{
         if (i < 8)
         {
             myText.text = questions[i];
         }
+		}
+		if(interviewerMute.voiceOn == 1){
+			yield return new WaitForSeconds(5);
+		}
+		else{
         if (i == 0) { 
 			//myText.text = "";
 			//source.PlayOneShot(intro, 1);
@@ -204,6 +237,9 @@ public class DialougeAdvanceGuided : MonoBehaviour
 			//myText.text = questions[i];
 			source.PlayOneShot(interview1, 1);
             yield return new WaitForSeconds(interview1.length);
+
+			source.PlayOneShot(Guide2, 1);
+            yield return new WaitForSeconds(Guide2.length);
         }
         if (i == 1) { source.PlayOneShot(interview2, 1);
             yield return new WaitForSeconds(interview2.length);
@@ -226,16 +262,22 @@ public class DialougeAdvanceGuided : MonoBehaviour
 		if (i == 7) { source.PlayOneShot(Interview8, 1);
             yield return new WaitForSeconds(interview5.length);
         }
+		}
 		
+		if(interviewerMute.textOn == 1){
+			myText.text = "";
+		}
+		else{
 		if (i < 8 && TipsToggle.tipsOn == 1)
         {
             myText.text = tips[i];
         }
+		}
 
 		counter++;
         //yield return new WaitForSeconds(5f);
         
-        
+        i++;
 
     }
 }
