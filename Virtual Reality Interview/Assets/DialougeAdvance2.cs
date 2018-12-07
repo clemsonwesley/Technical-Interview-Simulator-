@@ -174,10 +174,6 @@ public class DialougeAdvance2 : MonoBehaviour
     IEnumerator Dialouge()
     {
 
-		//Debug.Log(TipsToggle.tipsOn);
-		//Interview stopper statement -- end
-
-		
 			
 		if (counter == 6)
         {
@@ -193,10 +189,22 @@ public class DialougeAdvance2 : MonoBehaviour
 		}
 		numbers.Add(i);
 
+		if(interviewerMute.textOn == 1){
+		
+			myText.text = "";
+
+		}
+		else{
         if (i < 8)
         {
             myText.text = questions[i];
         }
+		}
+
+		if(interviewerMute.voiceOn == 1){
+			yield return new WaitForSeconds(5);
+		}
+		else{
         if (i == 0) { 
 			//myText.text = "";
 			//source.PlayOneShot(intro, 1);
@@ -226,11 +234,17 @@ public class DialougeAdvance2 : MonoBehaviour
 		if (i == 7) { source.PlayOneShot(Interview8, 1);
             yield return new WaitForSeconds(interview5.length);
         }
+		}
 		
+		if(interviewerMute.textOn == 1){
+			myText.text = "";
+		}
+		else{
 		if (i < 8 && TipsToggle.tipsOn == 1)
         {
             myText.text = tips[i];
         }
+		}
 
 		counter++;
         //yield return new WaitForSeconds(5f);
