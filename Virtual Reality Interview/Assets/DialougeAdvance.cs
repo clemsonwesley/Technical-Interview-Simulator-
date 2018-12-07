@@ -13,14 +13,14 @@ public class DialougeAdvance : MonoBehaviour
 	private HashSet<int> numbers = new HashSet<int>();
 	private int counter = 1;
 	
-    private string[] questions = { "Interviewer: Thank you for coming to see us for your interview today, why dont you go ahead and tell me a little about yourself?",
-                                   "Interviewer: Well its good to meet you. This role would require good problem solving skills, can you outline an issue you've had in the past how you tackled it?",
-                                   "Interviewer: If I asked your best friend what three words best described you, what do you think they would say?",
-                                   "Interviewer: What would you say is your greatest weakness?",
-                                   "Interviewer: And what would you say is your greatest strength?",
-								   "Interviewer: What are your long term career goals?",
-								   "Interviewer: Explain a time when you had a conflict within a group and how you solved it?",
-								   "Talk about a time your worked with a group of culturally different people and what were the challenges you faced?"};
+    private string[] questions = { "Interviewer: Tell me about yourself?",
+								   "Interviewer: What would you say is your greatest strength?",
+                                   "Interviewer: What do you see as your greatest weakness?",
+                                   "Interviewer: What are your long term career goals?",
+                                   "Interviewer: Explain a time when you had a conflict within a group and how you solved it?",
+								   "Interviewer: Talk about a time you worked with a group of culturally different people and what were the challenges you faced?",
+								   "Interviewer: What type of group dynamic do you prefer in a professional setting?",
+								   "Interviewer: Why do you want to be in this career field?"};
 
     private string[] tips = { "Tip: Try not to tell your whole life story, focus on things like education and career history. If possible focus on things relevant to the position you're applying to",
                                    "Tip: Focus on how you handled the situation professionally and productively, and ideally closing with a happy ending",
