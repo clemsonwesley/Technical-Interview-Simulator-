@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RotateVid.unity
     guid: bb0d625f66c584b20842633623f5b08a
+  - enabled: 1
+    path: Assets/Scenes/RoomGuided.unity
+    guid: 24ba90d3e617e02478c5fb2d0c7d7634
   m_configObjects: {}

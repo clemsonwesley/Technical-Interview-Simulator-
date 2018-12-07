@@ -22,6 +22,11 @@ public class DialougeAdvance : MonoBehaviour
 	public TextMeshProUGUI time8;
 	public TextMeshProUGUI time9;
 	public TextMeshProUGUI time10;
+	public TextMeshProUGUI text1;
+	public TextMeshProUGUI text2;
+	public TextMeshProUGUI text3;
+	public TextMeshProUGUI text4;
+	public TextMeshProUGUI text5;
 
     private int i;
 	private HashSet<int> numbers = new HashSet<int>();
@@ -110,6 +115,10 @@ public class DialougeAdvance : MonoBehaviour
 			int sec = timespan.Seconds;
 			
 			if(counter == 2){
+
+				if(sec > 60){
+				
+				}
 				time1.text = min.ToString();
 				time6.text = sec.ToString();
 			}
