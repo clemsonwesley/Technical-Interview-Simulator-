@@ -13414,7 +13414,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ed29981080f285a4782a127fc7f8cccf, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b776af83aa1882945b960bfa4c3cb5f5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -14368,7 +14368,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1910806513}
   - component: {fileID: 1910806517}
-  - component: {fileID: 1910806516}
+  - component: {fileID: 1910806518}
   - component: {fileID: 1910806515}
   - component: {fileID: 1910806514}
   m_Layer: 0
@@ -14524,7 +14524,14 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: fake text
---- !u!114 &1910806516
+--- !u!222 &1910806517
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1910806512}
+  m_CullTransparentMesh: 0
+--- !u!114 &1910806518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14532,7 +14539,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1910806512}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465786fc62ee8a24b9bc0a2442476335, type: 3}
+  m_Script: {fileID: 11500000, guid: b8b94b71bf6e3ce40aea1510ffb6cdd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myText: {fileID: 1910806515}
@@ -14546,24 +14553,17 @@ MonoBehaviour:
   time8: {fileID: 1537736333}
   time9: {fileID: 161172195}
   time10: {fileID: 983620874}
-  interview1: {fileID: 8300000, guid: 2750b542d715d9f49827c4cfcf970002, type: 3}
-  interview2: {fileID: 8300000, guid: 4ee20a07fe3f028428ec14268d71ae60, type: 3}
-  interview3: {fileID: 8300000, guid: eb9d3c9b68b1a0c4aaacda756a6f109f, type: 3}
-  interview4: {fileID: 8300000, guid: f0c38d6fc0825844d918c961190e8e17, type: 3}
-  interview5: {fileID: 8300000, guid: d03ee7ca6200c89499617023bf6f201e, type: 3}
-  interview6: {fileID: 8300000, guid: ced55096782540e49bd09cc71c1189e6, type: 3}
-  interview7: {fileID: 8300000, guid: 2bc339178e7ac2447893cdf68bbb05df, type: 3}
-  Interview8: {fileID: 8300000, guid: fdbcad1c15d7bc8439b79a1c86b7ce9d, type: 3}
-  outro: {fileID: 8300000, guid: 6df89ffca4677414188b88602a49814f, type: 3}
+  interview1: {fileID: 8300000, guid: ea1518f595f39114e9b1990429502b78, type: 3}
+  interview2: {fileID: 8300000, guid: 594631f38be56f44a8b6345851266031, type: 3}
+  interview3: {fileID: 8300000, guid: 39dd12acd5f47a34abc11f5ab9270a1f, type: 3}
+  interview4: {fileID: 8300000, guid: 819639a46aaf81749874395658c170bc, type: 3}
+  interview5: {fileID: 8300000, guid: 393747c45d877714fa01dbe8eac53e96, type: 3}
+  interview6: {fileID: 8300000, guid: 86c768d60acb8bc4ba107c225aa73319, type: 3}
+  interview7: {fileID: 8300000, guid: 8779c069152753b4681c1ab17eceba9d, type: 3}
+  Interview8: {fileID: 8300000, guid: 9dd8f9cfeb730664f9881a9b9f42580b, type: 3}
+  outro: {fileID: 8300000, guid: bab641349d404d44bad10105b0e91611, type: 3}
   can: {fileID: 1896186719}
   can2: {fileID: 1608612977}
---- !u!222 &1910806517
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1910806512}
-  m_CullTransparentMesh: 0
 --- !u!1 &1929265188
 GameObject:
   m_ObjectHideFlags: 0
